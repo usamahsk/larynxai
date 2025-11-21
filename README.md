@@ -1,0 +1,2 @@
+# larynxai
+larynxai static webpage
