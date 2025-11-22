@@ -5,7 +5,8 @@
  **********************************************************/
 
 // 🔑 INSERT YOUR GEMINI API KEY HERE
-const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY_HERE";
+const GEMINI_API_KEY = "AIzaSyCBgvCeJ5VrkeTDhONDq2dq-3I4M4hP9Rk";
+
 
 const GEMINI_MODEL =
   "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash-lite:generateContent?key=" +
