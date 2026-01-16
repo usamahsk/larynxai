@@ -1,0 +1,21 @@
+{
+  "name": "Larynx AI",
+  "short_name": "LarynxAI",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#22d3ee",
+  "description": "Next-Gen AI Voice Agents & Automation",
+  "icons": [
+    {
+      "src": "https://larynxai.in/logo.png", 
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+        "src": "https://larynxai.in/logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }
+  ]
+}

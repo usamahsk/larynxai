@@ -1,672 +1,512 @@
-<html lang="en"><head><meta charset="UTF-8">
-<title>larynxai – Voice Agent Platform</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style id="aura-editor-visibility-style">
-.invisible { visibility: hidden !important; }
-</style><script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script>
-<script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larynx AI | Next-Gen AI Voice Agents & Automation</title>
+    <meta name="description"
+        content="Larynx AI Revolutionizes lead generation with autonomous AI Voice Agents and WhatsApp Chatbots. Convert leads 24/7 with the world's most advanced conversational AI.">
+    <meta name="keywords"
+        content="AI Voice Agent, WhatsApp Chatbot, Real Estate Automation, Dental Clinic AI, Lead Generation AI, Larynx AI, Raiyan Amjad Patel">
+    <meta name="author" content="Raiyan Amjad Patel">
+    <meta name="theme-color" content="#22d3ee">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        
-        
-        
-        <script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script><meta name="disabled-font-classes" content="font-geist,font-roboto,font-montserrat,font-poppins,font-playfair,font-instrument-serif,font-merriweather,font-bricolage,font-jakarta,font-manrope,font-space-grotesk,font-work-sans,font-pt-serif,font-geist-mono,font-space-mono,font-quicksand,font-nunito"><link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist">.font-geist { font-family: 'Geist', sans-serif !important; }</style><link id="all-fonts-link-font-roboto" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-roboto">.font-roboto { font-family: 'Roboto', sans-serif !important; }</style><link id="all-fonts-link-font-montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-montserrat">.font-montserrat { font-family: 'Montserrat', sans-serif !important; }</style><link id="all-fonts-link-font-poppins" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-poppins">.font-poppins { font-family: 'Poppins', sans-serif !important; }</style><link id="all-fonts-link-font-playfair" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap"><style id="all-fonts-style-font-playfair">.font-playfair { font-family: 'Playfair Display', serif !important; }</style><link id="all-fonts-link-font-instrument-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-instrument-serif">.font-instrument-serif { font-family: 'Instrument Serif', serif !important; }</style><link id="all-fonts-link-font-merriweather" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap"><style id="all-fonts-style-font-merriweather">.font-merriweather { font-family: 'Merriweather', serif !important; }</style><link id="all-fonts-link-font-bricolage" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-bricolage">.font-bricolage { font-family: 'Bricolage Grotesque', sans-serif !important; }</style><link id="all-fonts-link-font-jakarta" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-jakarta">.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }</style><link id="all-fonts-link-font-manrope" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-manrope">.font-manrope { font-family: 'Manrope', sans-serif !important; }</style><link id="all-fonts-link-font-space-grotesk" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-space-grotesk">.font-space-grotesk { font-family: 'Space Grotesk', sans-serif !important; }</style><link id="all-fonts-link-font-work-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-work-sans">.font-work-sans { font-family: 'Work Sans', sans-serif !important; }</style><link id="all-fonts-link-font-pt-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-pt-serif">.font-pt-serif { font-family: 'PT Serif', serif !important; }</style><link id="all-fonts-link-font-geist-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist-mono">.font-geist-mono { font-family: 'Geist Mono', monospace !important; }</style><link id="all-fonts-link-font-space-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-space-mono">.font-space-mono { font-family: 'Space Mono', monospace !important; }</style><link id="all-fonts-link-font-quicksand" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-quicksand">.font-quicksand { font-family: 'Quicksand', sans-serif !important; }</style><link id="all-fonts-link-font-nunito" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-nunito">.font-nunito { font-family: 'Nunito', sans-serif !important; }</style></head>
-<body class="min-h-screen antialiased font-sans bg-slate-950 text-slate-100" bis_status="ok" bis_frame_id="387">
-  <div class="min-h-screen flex flex-col">
-    <!-- Top Gradient + Navigation -->
-    <div class="absolute inset-x-0 -top-32 -z-10 overflow-hidden">
-      <div class="h-64 bg-gradient-to-b from-green-500/20 blur-3xl opacity-80 via-slate-900 to-slate-950" style=""></div>
-    </div>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://larynxai.in/">
+    <meta property="og:title" content="Larynx AI | Future of Automated Lead Gen">
+    <meta property="og:description"
+        content="Stop losing 60% of leads. Deploy human-like AI agents that work 24/7 to scale your business revenue.">
 
-    <header class="w-full border-b backdrop-blur border-slate-800/60 bg-slate-950/60" style="">
-      <div class="max-w-6xl mx-auto flex items-center justify-between gap-4 py-4 px-4 lg:px-8">
-        <!-- Logo -->
-        <a href="#home" class="flex items-center gap-2">
-          <div class="h-8 w-8 rounded-full bg-gradient-to-tr from-green-500 flex items-center justify-center shadow-lg shadow-green-500/40 via-amber-400 to-cyan-400" style="">
-            <span class="text-xs font-semibold tracking-tight font-sans">VX</span>
-          </div>
-          <div class="flex flex-col leading-none">
-            <span class="text-base font-semibold tracking-tight font-sans">larynxai</span>
-            <span class="text-[0.675rem] tracking-tight text-slate-400 font-sans" style="">voice intelligence</span>
-          </div>
-        </a>
+    <!-- Google Fonts: Outfit (Futuristic) + Inter (Clean) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
 
-        <!-- Desktop Nav -->
-        <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300" style="">
-          <a href="#home" class="transition-colors hover:text-slate-50 font-sans" style="">Home</a>
-          <a href="#services" class="transition-colors hover:text-slate-50 font-sans" style="">Services</a>
-          <a href="#about" class="transition-colors hover:text-slate-50 font-sans" style="">About Us</a>
-          <a href="#vision" class="transition-colors hover:text-slate-50 font-sans" style="">Vision</a>
-          <a href="#mission" class="transition-colors hover:text-slate-50 font-sans" style="">Mission</a>
-          <a href="#pricing" class="transition-colors hover:text-slate-50 font-sans" style="">Consultation</a>
-          <a href="#contact" class="transition-colors hover:text-slate-50 font-sans" style="">Contact</a>
-        </nav>
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-        <!-- Actions -->
-        <div class="flex items-center gap-2">
-          <button class="hidden sm:inline-flex items-center gap-2 text-xs font-medium border rounded-full py-1.5 px-3 hover:border-slate-500 transition text-slate-200 border-slate-700/80 hover:bg-slate-900/60" style="">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 18v-6"></path>
-              <path d="M8 6h8"></path>
-              <rect x="4" y="10" width="16" height="10" rx="2"></rect>
-            </svg>
-            <span class="font-sans">Book demo</span>
-          </button>
-          <!-- Mobile Menu Icon (static for now) -->
-          <button class="md:hidden inline-flex items-center justify-center rounded-full border h-8 w-8 border-slate-700/80 text-slate-200 hover:bg-slate-900/80" style="">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-              <line x1="4" y1="7" x2="20" y2="7"></line>
-              <line x1="4" y1="12" x2="20" y2="12"></line>
-              <line x1="4" y1="17" x2="20" y2="17"></line>
-            </svg>
-          </button>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- JSON-LD SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Larynx AI",
+          "url": "https://larynxai.in",
+          "logo": "https://larynxai.in/logo.png",
+          "founder": {
+            "@type": "Person",
+            "name": "Raiyan Amjad Patel",
+            "url": "https://www.linkedin.com/in/raiyan-amjad-patel-10967b378/"
+          },
+          "description": "AI Automation Agency providing Voice Agents and Chatbots."
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Background Elements -->
+    <div class="bg-gradient-1"></div>
+    <div class="bg-gradient-2"></div>
+
+    <!-- Navigation -->
+    <header id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Larynx<span class="highlight">AI</span></a>
+            <nav class="desktop-nav">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#real-estate">Real Estate</a>
+                <a href="#process">Process</a>
+                <a href="#founder">Founder</a>
+                <a href="#results">Results</a>
+                <a href="#contact" class="btn btn-glow sm">Book Audit</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <i class="ph ph-list"></i>
+            </button>
         </div>
-      </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <button class="close-menu"><i class="ph ph-x"></i></button>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#real-estate">Real Estate</a>
+            <a href="#process">Process</a>
+            <a href="#founder">Founder</a>
+            <a href="#results">Results</a>
+            <a href="#contact">Contact Us</a>
+        </div>
     </header>
 
-    <main class="flex-1">
-      <!-- Hero / Home -->
-      <section id="home" class="w-full">
-        <div class="max-w-6xl mx-auto px-4 lg:px-8 py-12 lg:py-20 grid gap-8 lg:grid-cols-2 items-center">
-          <!-- Copy -->
-          <div class="space-y-6">
-            <div class="inline-flex items-center gap-2 rounded-full border border-green-500/40 text-xs font-medium py-1 px-2 bg-slate-900/60 text-green-200 font-sans" style="">
-              <span class="inline-flex h-1.5 w-1.5 rounded-full animate-pulse bg-cyan-400"></span>
-              Realtime, open‑source powered voice agents
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <div class="badge">
+                        <span class="pulse"></span> 98% Automation Accuracy
+                    </div>
+                    <h1>Your Business Never Sleeps. <br><span class="text-gradient">Why Should Your Phone?</span></h1>
+                    <p class="hero-sub">Deploy hyper-realistic <strong>AI Voice Agents</strong> to answer calls, qualify
+                        leads, and schedule appointments 24/7. Stop losing 60% of revenue to missed calls.</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-glow">Start Automating</a>
+                        <a href="#real-estate" class="btn btn-outline">For Real Estate</a>
+                    </div>
+                    <div class="hero-trust">
+                        <p>Trusted by industry leaders in</p>
+                        <div class="trust-icons">
+                            <span>Real Estate</span>
+                            <span class="dot"></span>
+                            <span>Dental</span>
+                            <span class="dot"></span>
+                            <span>Solar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="glass-phone">
+                        <div class="phone-screen">
+                            <div class="chat-bubble left">
+                                <p>Hi, I'm interested in the property.</p>
+                            </div>
+                            <div class="chat-bubble right">
+                                <p>Hello! I can help you with that right now. When are you available to view it?</p>
+                                <span class="ai-tag">AI Agent • <i class="ph ph-lightning-fill"></i> Instant</span>
+                            </div>
+                            <div class="chat-bubble left">
+                                <p>This Saturday at 2 PM.</p>
+                            </div>
+                            <div class="chat-bubble right">
+                                <p>Perfect. I've scheduled you for Saturday at 2 PM. Check your WhatsApp for details!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
             </div>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl tracking-tight text-slate-50 font-sans font-semibold" style="">
-              Launch your own AI voice agent in days, not months.
-            </h1>
-            <p class="text-sm sm:text-base max-w-xl text-slate-300 font-sans" style="">
-              larynxai connects open‑source speech, language and telephony tools into one production‑ready voice agent.
-              Automate support, sales and internal workflows securely, with full control over your data.
-            </p>
+        </section>
 
-            <div class="flex flex-wrap gap-3 pt-2">
-              <a href="#pricing" class="inline-flex items-center justify-center rounded-full bg-green-500 text-sm font-medium py-2.5 px-4 transition shadow-lg shadow-green-500/30 text-slate-50 hover:bg-green-400 font-sans" style="">
-                Start consultation
-              </a>
-              <a href="#services" class="inline-flex items-center justify-center rounded-full border text-sm font-medium py-2.5 px-4 hover:border-slate-500 transition border-slate-700 text-slate-100 hover:bg-slate-900/70 font-sans" style="">
-                Explore services
-              </a>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="section-header">
+                        <div class="badge">WHO WE ARE</div>
+                        <h2>Automating Business Communication</h2>
+                        <p>Larynx AI is revolutionizing how businesses handle customer interactions with cutting-edge AI
+                            voice agents and intelligent chatbots.</p>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-card glass-card">
+                            <h3>Our Mission</h3>
+                            <p>To help businesses never miss a lead by deploying human-like AI agents that work 24/7,
+                                qualifying prospects and scheduling appointments automatically.</p>
+                        </div>
+                        <div class="about-card glass-card">
+                            <h3>Our Vision</h3>
+                            <p>A world where every business, regardless of size, has access to enterprise-grade AI
+                                automation that drives revenue growth and customer satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="flex flex-wrap gap-6 pt-2">
-              <div class="flex items-center gap-3">
-                <div class="h-8 w-8 rounded-full bg-cyan-500/10 border flex items-center justify-center border-cyan-400/40 text-cyan-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
+        <!-- Stats Section -->
+        <section class="stats-banner glass-panel">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <h3>₹70-80L</h3>
+                    <p>Client Revenue Generated</p>
                 </div>
-                <div class="space-y-0.5">
-                  <p class="text-sm font-medium text-slate-100 font-sans" style="">85%+ call automation</p>
-                  <p class="text-xs text-slate-400 font-sans" style="">for routine queries in production deployments</p>
+                <div class="stat-item">
+                    <h3>2 Min</h3>
+                    <p>Avg. Response Time</p>
                 </div>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="h-8 w-8 rounded-full bg-amber-500/10 border flex items-center justify-center border-amber-400/40 text-amber-300" style="">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 19V5"></path>
-                    <path d="M5 12h14"></path>
-                  </svg>
+                <div class="stat-item">
+                    <h3>10+</h3>
+                    <p>Custom Systems Deployed</p>
                 </div>
-                <div class="space-y-0.5">
-                  <p class="text-sm font-medium text-slate-100 font-sans" style="">Best performing leading stack</p>
-                  <p class="text-xs text-slate-400 font-sans" style="">Deepgram,Open AI, Gemini, Silerio,Elevenlabs &amp; more</p>
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Monthly Appointments</p>
                 </div>
-              </div>
             </div>
-          </div>
+        </section>
 
-          <!-- Right: Interactive card -->
-          <div class="relative">
-            <div class="absolute -top-6 -right-4 h-24 w-24 bg-green-500/20 blur-3xl rounded-full" style=""></div>
-            <div class="absolute -bottom-4 -left-6 h-28 w-28 bg-cyan-500/20 blur-3xl rounded-full"></div>
-
-            <div class="relative rounded-3xl border backdrop-blur-lg shadow-xl p-5 sm:p-6 space-y-5 border-slate-800 bg-slate-900/80 shadow-slate-950/70" style="">
-              <!-- Voice Agent Prompt Mock -->
-              <div class="flex items-center justify-between gap-2">
-                <div class="space-y-1">
-                  <p class="text-xs uppercase tracking-tight text-slate-400 font-sans" style="">Live voice agent</p>
-                  <p class="text-sm font-medium text-slate-100 font-sans" style="">Customer support – inbound</p>
+        <!-- Services -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Future-Ready Solutions</h2>
+                    <p>Scalable AI infrastructure designed for growth.</p>
                 </div>
-                <span class="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 border text-[0.675rem] font-medium py-1 px-2 border-cyan-400/30 text-cyan-300">
-                  <span class="h-1.5 w-1.5 rounded-full animate-ping bg-cyan-400"></span>
-                  <span class="font-sans">Monitoring</span>
-                </span>
-              </div>
+                <div class="services-grid">
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="ph ph-microphone-stage"></i></div>
+                        <h3>AI Voice Agents</h3>
+                        <p>Human-quality voice interactions. Handles interruptions, complex queries, and appointment
+                            booking seamlessly.</p>
+                    </div>
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="ph ph-whatsapp-logo"></i></div>
+                        <h3>WhatsApp Neural Bots</h3>
+                        <p>Go beyond simple menus. Our bots understand context, qualify leads instantly, and integrate
+                            with your CRM.</p>
+                    </div>
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="ph ph-robot"></i></div>
+                        <h3>HR & Workflow Auto</h3>
+                        <p>Screen thousands of resumes and conduct initial voice interviews without lifting a finger.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-              <div class="rounded-2xl border p-3 space-y-3 border-slate-800 bg-slate-950/80" style="">
-                <div class="flex items-start gap-3">
-                  <div class="h-6 w-6 rounded-full bg-green-500/80 flex items-center justify-center text-[0.675rem] font-semibold tracking-tight font-sans" style="">
-                    AI
-                  </div>
-                  <div class="flex-1">
-                    <p class="text-xs text-slate-200 font-sans" style="">
-                      Hi, this is your automated assistant. I can help you reset passwords, track orders, or route you to the right team. How can I help today?
+        <!-- Real Estate Specific Section -->
+        <section id="real-estate" class="real-estate-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">INDUSTRY FOCUS</div>
+                    <h2>The Always-On Realtor</h2>
+                    <p>How Larynx AI supercharges Real Estate agencies.</p>
+                </div>
+                <div class="re-grid">
+                    <div class="re-feature">
+                        <div class="re-icon"><i class="ph ph-house-line"></i></div>
+                        <div class="re-content">
+                            <h3>Never Miss an Inquiry</h3>
+                            <p>60% of property calls happen after hours. Our Voice Agents answer 24/7, capturing every
+                                lead instantly.</p>
+                        </div>
+                    </div>
+                    <div class="re-feature">
+                        <div class="re-icon"><i class="ph ph-funnel"></i></div>
+                        <div class="re-content">
+                            <h3>Intelligent Qualification</h3>
+                            <p>The AI asks budget, location preference, and timeline before passing the lead to your
+                                sales team.</p>
+                        </div>
+                    </div>
+                    <div class="re-feature">
+                        <div class="re-icon"><i class="ph ph-calendar-check"></i></div>
+                        <div class="re-content">
+                            <h3>Auto-Scheduling</h3>
+                            <p>Syncs directly with your team's calendar to book property viewings without back-and-forth
+                                emails.</p>
+                        </div>
+                    </div>
+                    <div class="re-feature">
+                        <div class="re-icon"><i class="ph ph-file-pdf"></i></div>
+                        <div class="re-content">
+                            <h3>Instant Brochures</h3>
+                            <p>Caller asks for details? The AI instantly WhatsApps them the project brochure and pricing
+                                sheet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="process-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Deployment Protocol</h2>
+                    <p>From audit to automation in 4 steps.</p>
+                </div>
+                <div class="process-steps">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <h3>Audit</h3>
+                        <p>We analyze your current lead flow and identify "leakage" points where you are losing revenue.
+                        </p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <h3>Architecture</h3>
+                        <p>We build a custom AI neural network trained on your specific business data and objections.
+                        </p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <h3>Integration</h3>
+                        <p>Seamless connection with your CRM (HubSpot, Salesforce, etc.) and calendar systems.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">04</div>
+                        <h3>Scale</h3>
+                        <p>Go live. Watch as response times drop to seconds and conversion rates soar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder Section (UPDATED with Authentic Data) -->
+        <section id="founder" class="founder-section">
+            <div class="container founder-container">
+                <div class="founder-image">
+                    <div class="image-wrapper">
+                        <img src="founder.jpg" alt="Raiyan Amjad Patel" class="founder-photo" loading="lazy">
+                    </div>
+                    <div class="founder-socials">
+                        <a href="https://www.linkedin.com/in/raiyan-amjad-patel-10967b378/" target="_blank"><i
+                                class="ph ph-linkedin-logo"></i> Connect on LinkedIn</a>
+                    </div>
+                </div>
+                <div class="founder-content">
+                    <div class="label-tech">THE ARCHITECT</div>
+                    <h2>Raiyan Amjad Patel</h2>
+                    <p class="role">Founder & Lead AI Engineer at Larynx AI</p>
+                    <p class="bio"
+                        style="font-style: italic; color: #cbd5e1; border-left: 3px solid var(--primary); padding-left: 1rem;">
+                        "I didn't wait for 'perfect credentials.' I built instead. And it changed everything."
                     </p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-3">
-                  <div class="h-6 w-6 rounded-full border flex items-center justify-center text-[0.675rem] font-semibold tracking-tight bg-slate-800 border-slate-700 font-sans" style="">
-                    U
-                  </div>
-                  <div class="flex-1">
-                    <p class="text-xs text-slate-300 font-sans" style="">
-                      I want to know the status of my last order.
+                    <p class="bio">
+                        Hey, I'm Raiyan 👋. I founded Larynx AI with a single mission: to help businesses stop losing
+                        <strong>60% of their leads</strong> to missed calls and manual chaos.
                     </p>
-                  </div>
+                    <p class="bio">
+                        Today, I've architected over <strong>10+ custom AI systems</strong> that have collectively
+                        generated <strong>₹70-80 Lakhs</strong> in revenue for clients. My agents don't just answer
+                        phones; they build relationships, qualifying leads for Real Estate, Dental, and Solar businesses
+                        24/7.
+                    </p>
                 </div>
-              </div>
+            </div>
+        </section>
 
-              <!-- Bottom controls -->
-              <div class="space-y-3">
-                <button class="w-full inline-flex items-center justify-center gap-2 rounded-full text-sm font-medium py-2.5 px-4 transition bg-slate-100 text-slate-900 hover:bg-white font-sans" style="" onclick="openNewTab()">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="11" r="4"></circle>
-                    <path d="M8 11v1a4 4 0 0 0 8 0v-1"></path>
-                    <path d="M12 19v2"></path>
-                    <path d="M8 21h8"></path>
-                  </svg>
-                  Try sample call
-                </button>
-
-                <div class="grid grid-cols-3 gap-2 text-[0.675rem]">
-                  <div class="rounded-xl border p-2.5 border-slate-800 bg-slate-950/70" style="">
-                    <p class="text-slate-400 font-sans" style="">Avg. handle</p>
-                    <p class="text-sm font-semibold text-slate-100 font-sans" style="">1.8 min</p>
-                  </div>
-                  <div class="rounded-xl border p-2.5 border-slate-800 bg-slate-950/70" style="">
-                    <p class="text-slate-400 font-sans" style="">Containment</p>
-                    <p class="text-sm font-semibold text-cyan-300 font-sans">87%</p>
-                  </div>
-                  <div class="rounded-xl border p-2.5 border-slate-800 bg-slate-950/70" style="">
-                    <p class="text-slate-400 font-sans" style="">CSAT lift</p>
-                    <p class="text-sm font-semibold text-amber-300 font-sans" style="">+19%</p>
-                  </div>
+        <!-- Results / Case Studies (UPDATED with Authentic Data) -->
+        <section id="results" class="results-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Engineered for Impact</h2>
+                    <p>Real metrics from deployed systems.</p>
                 </div>
-
-                <!-- Tech stack -->
-                <div class="flex flex-wrap items-center gap-3 border-t pt-3 mt-1 border-slate-800" style="">
-                  <span class="text-[0.675rem] text-slate-400 font-sans" style="">Powered by</span>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="inline-flex items-center rounded-full border text-[0.675rem] py-1 px-2.5 bg-slate-900 border-slate-700/80 text-slate-200 font-sans" style="">
-                      Deepgram ASR
-                    </span>
-                    <span class="inline-flex items-center rounded-full border text-[0.675rem] py-1 px-2.5 bg-slate-900 border-slate-700/80 text-slate-200 font-sans" style="">
-                      Cartesia TTS
-                    </span>
-                    <span class="inline-flex items-center rounded-full border text-[0.675rem] py-1 px-2.5 bg-slate-900 border-slate-700/80 text-slate-200 font-sans" style="">
-                      Gemini
-                    </span>
-                    <span class="inline-flex items-center rounded-full border text-[0.675rem] py-1 px-2.5 bg-slate-900 border-slate-700/80 text-slate-200 font-sans" style="">
-                      Cloud PBX
-                    </span>
-                  </div>
+                <div class="results-grid">
+                    <div class="result-card glass-card">
+                        <div class="card-header">
+                            <span>Solar Business</span>
+                            <i class="ph ph-sun"></i>
+                        </div>
+                        <h3>₹80 Lakhs</h3>
+                        <p>Revenue Generated via AI Leads</p>
+                    </div>
+                    <div class="result-card glass-card">
+                        <div class="card-header">
+                            <span>Real Estate</span>
+                            <i class="ph ph-house-line"></i>
+                        </div>
+                        <h3>40-50</h3>
+                        <p>Qualified Leads Captured / Month</p>
+                    </div>
+                    <div class="result-card glass-card">
+                        <div class="card-header">
+                            <span>Dental Clinic</span>
+                            <i class="ph ph-trend-up"></i>
+                        </div>
+                        <h3>500+</h3>
+                        <p>Appointments Automated / Month</p>
+                    </div>
+                    <div class="result-card glass-card">
+                        <div class="card-header">
+                            <span>HR Department</span>
+                            <i class="ph ph-users"></i>
+                        </div>
+                        <h3>90%</h3>
+                        <p>Resume Screening Automated</p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div> <!-- end right -->
-        </div>
-      </section>
+        </section>
 
-      <!-- Services -->
-      <section id="services" class="w-full border-t border-slate-900/80" style="">
-        <div class="max-w-6xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
-          <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
-            <div>
-              <h2 class="text-2xl sm:text-3xl tracking-tight text-slate-50 font-sans font-semibold" style="">Services</h2>
-              <p class="text-sm sm:text-base max-w-2xl mt-1.5 text-slate-300 font-sans" style="">
-                From discovery workshops to fully managed deployments, we design and operate secure voice agents tailored
-                to your workflows and tools.
-              </p>
-            </div>
-            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs sm:text-sm text-green-300 hover:text-green-200 font-sans" style="">
-              Talk to our team
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M7 17L17 7"></path>
-                <path d="M8 7h9v9"></path>
-              </svg>
-            </a>
-          </div>
-
-          <div class="grid gap-5 md:grid-cols-3">
-            <!-- Service 1 -->
-            <div class="rounded-2xl border p-5 space-y-3 border-slate-800 bg-slate-950/70" style="">
-              <div class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-green-500/15 text-green-300" style="">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M10 17v4a2 2 0 0 0 2-2h2a2 2 0 0 0 2-2v-1"></path>
-                  <path d="M7 11v2a5 5 0 0 0 5 5h.5"></path>
-                  <path d="M20 10a4 4 0 0 0-8 0v3"></path>
-                  <path d="M6 6v5"></path>
-                  <circle cx="6" cy="3" r="2"></circle>
-                </svg>
-              </div>
-              <h3 class="text-base font-semibold text-slate-50 font-sans" style="">Voice agent design</h3>
-              <p class="text-sm text-slate-300 font-sans" style="">
-                Conversation design, dialog flows, guardrails and escalation paths for support, sales, and internal use‑cases.
-              </p>
-              <ul class="space-y-1.5 text-xs text-slate-300" style="">
-                <li class="flex items-start gap-2 font-sans">
-                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
-                  User journey mapping &amp; intent discovery
-                </li>
-                <li class="flex items-start gap-2 font-sans">
-                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
-                  Multi‑language flows &amp; compliance scripts
-                </li>
-              </ul>
-            </div>
-            <!-- Service 2 -->
-            <div class="rounded-2xl border p-5 space-y-3 border-slate-800 bg-slate-950/70" style="">
-              <div class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-amber-500/15 text-amber-300" style="">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 8.18v7.64a2 2 0 0 1-1 1.73l-6 3.27a2 2 0 0 1-2 0l-6-3.27a2 2 0 0 1-1-1.73V8.18a2 2 0 0 1 1-1.73l6-3.27a2 2 0 0 1 2 0l6 3.27a2 2 0 0 1 1 1.73z"></path>
-                  <path d="M6.5 5.75L12 9l5.5-3.25"></path>
-                  <path d="M12 22.76V9"></path>
-                </svg>
-              </div>
-              <h3 class="text-base font-semibold text-slate-50 font-sans" style="">Implementation &amp; integration</h3>
-              <p class="text-sm text-slate-300 font-sans" style="">
-                We integrate with your CRM, ticketing and data sources using a modular, open‑source toolkit.
-              </p>
-              <ul class="space-y-1.5 text-xs text-slate-300" style="">
-                <li class="flex items-start gap-2 font-sans">
-                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
-                  Telephony (SIP, WebRTC), chat &amp; in‑app voice
-                </li>
-                <li class="flex items-start gap-2 font-sans">
-                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
-                  Open‑source connectors &amp; custom APIs
-                </li>
-              </ul>
-            </div>
-            <!-- Service 3 -->
-            <div class="rounded-2xl border p-5 space-y-3 border-slate-800 bg-slate-950/70" style="">
-              <div class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M3 3v5h5"></path>
-                  <path d="M21 21v-5h-5"></path>
-                  <path d="M3 16v5h5"></path>
-                  <path d="M21 8V3h-5"></path>
-                  <rect x="7" y="7" width="10" height="10" rx="2"></rect>
-                </svg>
-              </div>
-              <h3 class="text-base font-semibold text-slate-50 font-sans" style="">Monitoring &amp; optimization</h3>
-              <p class="text-sm text-slate-300 font-sans" style="">
-                Continuous tuning of models, prompts and flows based on real conversation data and analytics.
-              </p>
-              <ul class="space-y-1.5 text-xs text-slate-300" style="">
-                <li class="flex items-start gap-2 font-sans">
-                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
-                  Call analytics, drop‑off and intent reports
-                </li>
-                <li class="flex items-start gap-2 font-sans">
-                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
-                  A/B experiments &amp; model benchmarking
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About, Vision, Mission -->
-      <section id="about" class="w-full border-t border-slate-900/80 bg-slate-950" style="">
-        <div class="max-w-6xl mx-auto px-4 lg:px-8 py-12 lg:py-16 grid gap-8 lg:grid-cols-[1.2fr_1fr] items-start">
-          <div class="space-y-6">
-            <h2 class="text-2xl sm:text-3xl tracking-tight text-slate-50 font-sans font-semibold" style="">About us</h2>
-            <p class="text-sm sm:text-base text-slate-300 font-sans" style="">
-              larynxai is an engineering‑first studio focused on reliable voice automation. We assemble best‑in‑class
-              open‑source components for speech recognition, language understanding, and synthesis into one cohesive platform.
-            </p>
-            <p class="text-sm sm:text-base text-slate-300 font-sans" style="">
-              Our team has shipped large‑scale contact center and real‑time communication systems across finance, logistics,
-              healthcare and SaaS. We care deeply about observability, latency and user experience.
-            </p>
-
-            <div class="grid gap-4 sm:grid-cols-3">
-              <div class="rounded-2xl border p-3 border-slate-800 bg-slate-950/80" style="">
-                <p class="text-xs text-slate-400 font-sans" style="">Deployed minutes</p>
-                <p class="text-xl font-semibold tracking-tight mt-1 text-slate-50 font-sans" style="">10M+</p>
-                <p class="text-xs mt-1 text-slate-400 font-sans" style="">voice minutes processed with open‑source pipelines</p>
-              </div>
-              <div class="rounded-2xl border p-3 border-slate-800 bg-slate-950/80" style="">
-                <p class="text-xs text-slate-400 font-sans" style="">Latency</p>
-                <p class="text-xl font-semibold tracking-tight mt-1 text-slate-50 font-sans" style="">&lt; 500ms</p>
-                <p class="text-xs mt-1 text-slate-400 font-sans" style="">median end‑to‑end response time in production</p>
-              </div>
-              <div class="rounded-2xl border p-3 border-slate-800 bg-slate-950/80" style="">
-                <p class="text-xs text-slate-400 font-sans" style="">Coverage</p>
-                <p class="text-xl font-semibold tracking-tight mt-1 text-slate-50 font-sans" style="">40+ langs</p>
-                <p class="text-xs mt-1 text-slate-400 font-sans" style="">through community‑maintained ASR &amp; TTS models</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="space-y-5">
-            <!-- Vision -->
-            <section id="vision" class="rounded-2xl border p-4 border-slate-800 bg-slate-950/90" style="">
-              <div class="flex items-center gap-2 mb-1.5">
-                <div class="h-6 w-6 rounded-full bg-green-500/20 flex items-center justify-center text-green-300" style="">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <circle cx="12" cy="12" r="3"></circle>
-                  </svg>
-                </div>
-                <h3 class="text-sm font-semibold text-slate-50 font-sans" style="">Vision</h3>
-              </div>
-              <p class="text-sm text-slate-300 font-sans" style="">
-                Voice interfaces that feel human, respect privacy, and are fully transparent: inspectable code, auditable models,
-                and no black‑box vendor lock‑in.
-              </p>
-            </section>
-
-            <!-- Mission -->
-            <section id="mission" class="rounded-2xl border p-4 border-slate-800 bg-slate-950/90" style="">
-              <div class="flex items-center gap-2 mb-1.5">
-                <div class="h-6 w-6 rounded-full bg-cyan-500/20 flex items-center justify-center text-cyan-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  </svg>
-                </div>
-                <h3 class="text-sm font-semibold text-slate-50 font-sans" style="">Mission</h3>
-              </div>
-              <p class="text-sm text-slate-300 font-sans" style="">
-                Help teams automate 80% of repetitive conversations using safe, open‑source technology while keeping humans
-                in the loop for edge‑cases and high‑value interactions.
-              </p>
-            </section>
-          </div>
-        </div>
-      </section>
-
-      <!-- Product Benefit Statistics -->
-      <section class="w-full border-t border-slate-900/80" style="">
-        <div class="max-w-6xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
-          <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
-            <div>
-              <h2 class="text-2xl sm:text-3xl tracking-tight text-slate-50 font-sans font-semibold" style="">Product impact</h2>
-              <p class="text-sm sm:text-base max-w-2xl mt-1.5 text-slate-300 font-sans" style="">
-                Quantified benefits from recent deployments. Each engagement comes with a measurement plan and shared dashboards.
-              </p>
-            </div>
-          </div>
-
-          <div class="grid gap-5 md:grid-cols-4">
-            <div class="rounded-2xl border p-4 space-y-1.5 border-slate-800 bg-slate-950/70" style="">
-              <p class="text-xs text-slate-400 font-sans" style="">Cost per call</p>
-              <p class="text-xl font-semibold tracking-tight text-cyan-300 font-sans">‑60%</p>
-              <p class="text-sm text-slate-300 font-sans" style="">average reduction vs. fully human‑handled calls</p>
-            </div>
-            <div class="rounded-2xl border p-4 space-y-1.5 border-slate-800 bg-slate-950/70" style="">
-              <p class="text-xs text-slate-400 font-sans" style="">First contact resolution</p>
-              <p class="text-xl font-semibold tracking-tight text-cyan-300 font-sans">+24%</p>
-              <p class="text-sm text-slate-300 font-sans" style="">higher task completion from guided workflows</p>
-            </div>
-            <div class="rounded-2xl border p-4 space-y-1.5 border-slate-800 bg-slate-950/70" style="">
-              <p class="text-xs text-slate-400 font-sans" style="">Time to deploy</p>
-              <p class="text-xl font-semibold tracking-tight text-amber-300 font-sans" style="">3–6 weeks</p>
-              <p class="text-sm text-slate-300 font-sans" style="">from discovery to live voice agent in production</p>
-            </div>
-            <div class="rounded-2xl border p-4 space-y-1.5 border-slate-800 bg-slate-950/70" style="">
-              <p class="text-xs text-slate-400 font-sans" style="">Human workload</p>
-              <p class="text-xl font-semibold tracking-tight text-amber-300 font-sans" style="">‑40%</p>
-              <p class="text-sm text-slate-300 font-sans" style="">fewer repetitive tickets &amp; calls for your team</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Pricing / Consultation -->
-      <section id="pricing" class="w-full border-t border-slate-900/80 bg-slate-950" style="">
-        <div class="max-w-6xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
-          <div class="max-w-3xl mb-8">
-            <h2 class="text-2xl sm:text-3xl tracking-tight text-slate-50 font-sans font-semibold" style="">Consultation &amp; pricing</h2>
-            <p class="text-sm sm:text-base mt-1.5 text-slate-300 font-sans" style="">
-              Start with a focused consultation to validate your voice use‑cases, estimate ROI and design an architecture
-              built on open‑source components.
-            </p>
-          </div>
-
-          <div class="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-            <!-- Main pricing card -->
-            <div class="rounded-3xl border border-green-500/40 bg-gradient-to-br from-green-500/15 p-5 sm:p-6 shadow-xl via-slate-950 to-slate-950 shadow-green-900/40" style="">
-              <div class="flex items-center justify-between gap-3 mb-4">
-                <div>
-                  <h3 class="text-lg font-semibold tracking-tight text-slate-50 font-sans" style="">Discovery consultation</h3>
-                  <p class="text-xs mt-0.5 text-slate-200 font-sans" style="">For product, operations and CX leaders exploring voice automation.</p>
-                </div>
-                <span class="inline-flex items-center rounded-full bg-cyan-500/10 border text-[0.675rem] font-medium py-1 px-2.5 border-cyan-400/40 text-cyan-200 font-sans">
-                  Recommended
-                </span>
-              </div>
-
-              <div class="flex items-baseline gap-2 mb-2">
-                <p class="text-3xl tracking-tight text-slate-50 font-sans font-semibold" style="">$490</p>
-                <p class="text-xs text-slate-300 font-sans" style="">one‑time, up to 90 minutes</p>
-              </div>
-              <p class="text-sm mb-4 text-slate-200 font-sans" style="">
-                We map your use‑cases, design an MVP agent and produce a clear technical plan, including open‑source tooling,
-                hosting strategy and cost model.
-              </p>
-
-              <ul class="space-y-2 text-sm mb-5 text-slate-100" style="">
-                <li class="flex gap-2 font-sans">
-                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
-                  Use‑case and data readiness assessment
-                </li>
-                <li class="flex gap-2 font-sans">
-                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
-                  Architecture using tools like Deepgram, Cartesia, Silerio, Gemini
-                </li>
-                
-                
-              </ul>
-
-              <div class="flex flex-wrap gap-3">
-                <a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-full text-sm font-medium py-2.5 px-4 transition bg-slate-100 text-slate-900 hover:bg-white font-sans" style="">
-                  Book consultation
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M7 17L17 7"></path>
-                    <path d="M8 7h9v9"></path>
-                  </svg>
-                </a>
-                <button class="inline-flex items-center justify-center gap-1.5 rounded-full border text-xs font-medium py-2 px-3 transition border-slate-300/50 text-slate-50 hover:bg-slate-950/50 font-sans" style="">
-                  Download sample scope
-                </button>
-              </div>
-            </div>
-
-            <!-- Side info -->
-            <div class="space-y-4">
-              <div class="rounded-2xl border p-4 border-slate-800 bg-slate-950/80" style="">
-                <h4 class="text-sm font-semibold mb-1 text-slate-50 font-sans" style="">Ongoing engagement</h4>
-                <p class="text-sm text-slate-300 font-sans" style="">
-                  Implementation projects typically start at <span class="font-semibold text-slate-100 font-sans" style="">$12k</span> and scale
-                  with call volume, integrations and SLAs. We support both cloud and on‑premise setups.
-                </p>
-              </div>
-              <div class="rounded-2xl border p-4 space-y-3 border-slate-800 bg-slate-950/80" style="">
-                <div class="flex items-center gap-2">
-                  <div class="h-6 w-6 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-300" style="">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M4 4h16v6H4z"></path>
-                      <path d="M4 14h16v6H4z"></path>
-                      <path d="M12 10v4"></path>
-                    </svg>
-                  </div>
-                  <h4 class="text-sm font-semibold text-slate-50 font-sans" style="">Transparent stack</h4>
-                </div>
-                <p class="text-sm text-slate-300 font-sans" style="">
-                  We lean on proven, permissively licensed tools wherever possible, such as:
-                </p>
-                <ul class="grid grid-cols-2 gap-1.5 text-xs text-slate-300" style="">
-                  <li class="font-sans">Deepgrams ASR</li>
-                  <li class="font-sans">Vosk</li>
-                  
-                  
-                  
-                  
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" class="w-full border-t border-slate-900/80" style="">
-        <div class="max-w-6xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
-          <div class="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] items-start">
-            <!-- Form -->
-            <div class="rounded-3xl border p-5 sm:p-6 border-slate-800 bg-slate-950/80" style="">
-              <div class="mb-4">
-                <h2 class="text-2xl tracking-tight text-slate-50 font-sans font-semibold" style="">Contact</h2>
-                <p class="text-sm sm:text-base mt-1.5 text-slate-300 font-sans" style="">
-                  Tell us about your use‑case and we’ll respond within one business day with next steps.
-                </p>
-              </div>
-              <form class="space-y-4">
-                <div class="grid gap-3 sm:grid-cols-2">
-                  <div class="space-y-1.5">
-                    <label class="text-xs font-medium text-slate-200 font-sans" style="">Full name</label>
-                    <input type="text" class="w-full rounded-xl border text-sm placeholder:text-slate-500 py-2 px-3 focus:outline-none focus:ring-1 focus:ring-green-500 focus:border-green-500 border-slate-700 bg-slate-950/80 text-slate-100" placeholder="Jane Doe" style="">
-                  </div>
-                  <div class="space-y-1.5">
-                    <label class="text-xs font-medium text-slate-200 font-sans" style="">Work email</label>
-                    <input type="email" class="w-full rounded-xl border text-sm placeholder:text-slate-500 py-2 px-3 focus:outline-none focus:ring-1 focus:ring-green-500 focus:border-green-500 border-slate-700 bg-slate-950/80 text-slate-100" placeholder="you@company.com" style="">
-                  </div>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container contact-wrapper">
+                <div class="contact-text">
+                    <h2>Ready to ascend?</h2>
+                    <p>DM me "VOICE" or fill this form to set up your 24/7 lead system.</p>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i class="ph ph-globe"></i>
+                            <a href="https://larynxai.in">larynxai.in</a>
+                        </div>
+                        <div class="detail-item">
+                            <i class="ph ph-envelope-simple"></i>
+                            <a href="mailto:raiyan@larynxai.in">raiyan@larynxai.in</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="grid gap-3 sm:grid-cols-2">
-                  <div class="space-y-1.5">
-                    <label class="text-xs font-medium text-slate-200 font-sans" style="">Company</label>
-                    <input type="text" class="w-full rounded-xl border text-sm placeholder:text-slate-500 py-2 px-3 focus:outline-none focus:ring-1 focus:ring-green-500 focus:border-green-500 border-slate-700 bg-slate-950/80 text-slate-100" placeholder="Acme Inc." style="">
-                  </div>
-                  <div class="space-y-1.5">
-                    <label class="text-xs font-medium text-slate-200 font-sans" style="">Monthly call volume</label>
-                    <select class="w-full rounded-xl border text-sm py-2 px-3 focus:outline-none focus:ring-1 focus:ring-green-500 focus:border-green-500 border-slate-700 bg-slate-950/80 text-slate-100" style="">
-                      <option class="bg-slate-900 font-sans" style="">Select volume</option>
-                      <option class="bg-slate-900 font-sans" style="">&lt; 5,000</option>
-                      <option class="bg-slate-900 font-sans" style="">5,000 – 25,000</option>
-                      <option class="bg-slate-900 font-sans" style="">25,000 – 100,000</option>
-                      <option class="bg-slate-900 font-sans" style="">&gt; 100,000</option>
-                    </select>
-                  </div>
-                </div>
+                <!-- Fully Functional Form Structure -->
+                <div class="form-box glass-panel">
+                    <form action="https://formsubmit.co/raiyan@larynxai.in" method="POST" class="styled-form">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://larynxai.in/thanks.html">
 
-                <div class="space-y-1.5">
-                  <label class="text-xs font-medium text-slate-200 font-sans" style="">What do you want to automate?</label>
-                  <textarea rows="4" class="w-full rounded-xl border text-sm placeholder:text-slate-500 py-2 px-3 focus:outline-none focus:ring-1 focus:ring-green-500 focus:border-green-500 border-slate-700 bg-slate-950/80 text-slate-100" placeholder="Describe your current workflows, systems and goals." style=""></textarea>
+                        <div class="input-group">
+                            <input type="text" name="name" required placeholder=" " id="input-name">
+                            <label for="input-name">Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" required placeholder=" " id="input-email">
+                            <label for="input-email">Email Address</label>
+                        </div>
+                        <div class="input-group">
+                            <select name="service" required>
+                                <option value="" disabled selected>Interested In...</option>
+                                <option value="voice-agent">AI Voice Agent</option>
+                                <option value="real-estate-bot">Real Estate Automation</option>
+                                <option value="solar-leads">Solar Lead Gen</option>
+                                <option value="full-system">Full Business Audit</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <textarea name="message" rows="3" placeholder=" " id="input-msg"></textarea>
+                            <label for="input-msg">Project Details</label>
+                        </div>
+                        <button type="submit" class="btn btn-glow full-width">Send Request</button>
+                    </form>
                 </div>
-
-                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-2">
-                  <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full bg-green-500 text-sm font-medium py-2.5 px-4 transition text-slate-50 hover:bg-green-400 font-sans" style="">
-                    Send message
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M22 2L11 13"></path>
-                      <path d="M22 2L15 22l-4-9-9-4L22 2z"></path>
-                    </svg>
-                  </button>
-                  <p class="text-xs text-slate-400 font-sans" style="">
-                    We never share your details. Optionally sign a mutual NDA before sharing sensitive data.
-                  </p>
-                </div>
-              </form>
             </div>
+        </section>
 
-            <!-- Contact info & quick facts -->
-            <div class="space-y-4">
-              <div class="rounded-2xl border p-4 space-y-3 border-slate-800 bg-slate-950/80" style="">
-                <h3 class="text-sm font-semibold text-slate-50 font-sans" style="">Direct channels</h3>
-                <div class="space-y-2 text-sm text-slate-300" style="">
-                  <p class="flex items-center gap-2 font-sans">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-slate-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="">
-                      <path d="M4 4h16v16H4z"></path>
-                      <path d="M22 4L12 13 2 4"></path>
-                    </svg>
-                    email@larynxai.in
-                  </p>
-                  <p class="flex items-center gap-2 font-sans">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-slate-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="">
-                      <path d="M22 16.92V21a1 1 0 0 1-1.09 1A19.79 19.79 0 0 1 3 5.09 1 1 0 0 1 4 4h4.09a1 1 0 0 1 1 .75l1.2 4.21a1 1 0 0 1-.27 1L8.91 12.91a16 16 0 0 0 6.18 6.18l2.95-2.95a1 1 0 0 1 1-.27l4.21 1.2a1 1 0 0 1 .67 1.15z"></path>
-                    </svg>
-                    +91 7039060977
-                  </p>
-                   <p class="flex items-center gap-2 font-sans">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-slate-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="">
-                      <path d="M22 16.92V21a1 1 0 0 1-1.09 1A19.79 19.79 0 0 1 3 5.09 1 1 0 0 1 4 4h4.09a1 1 0 0 1 1 .75l1.2 4.21a1 1 0 0 1-.27 1L8.91 12.91a16 16 0 0 0 6.18 6.18l2.95-2.95a1 1 0 0 1 1-.27l4.21 1.2a1 1 0 0 1 .67 1.15z"></path>
-                    </svg>
-                    +91 9967835090
-                  </p>
-                </div>
-              </div>
-
-              <div class="rounded-2xl border p-4 space-y-3 border-slate-800 bg-slate-950/80" style="">
-                <div class="flex items-center gap-2">
-                  <div class="h-6 w-6 rounded-full bg-green-500/20 flex items-center justify-center text-green-300" style="">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M9 9l10.5-3.5L16 16 8 22l1-7-4-4 7-1 1-7z"></path>
-                    </svg>
-                  </div>
-                  <h3 class="text-sm font-semibold text-slate-50 font-sans" style="">Ideal for</h3>
-                </div>
-                <ul class="space-y-1.5 text-sm text-slate-300" style="">
-                  <li class="font-sans">Customer support teams with long wait times</li>
-                  <li class="font-sans">Product &amp; platform teams building voice features</li>
-                  
-                </ul>
-              </div>
-
-              <div class="rounded-2xl border p-4 space-y-3 border-slate-800 bg-slate-950/80" style="">
-                <div class="flex items-center gap-2">
-                  <div class="h-6 w-6 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-300" style="">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                      <circle cx="12" cy="12" r="3"></circle>
-                      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 8.6 19a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 8a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 8.6 4.6 1.65 1.65 0 0 0 10.11 3H10a2 2 0 0 1 4 0v.09A1.65 1.65 0 0 0 15.4 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 8.6 1.65 1.65 0 0 0 20.91 10H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09A1.65 1.65 0 0 0 19.4 15z"></path>
-                    </svg>
-                  </div>
-                  <h3 class="text-sm font-semibold text-slate-50 font-sans" style="">Technical stack options</h3>
-                </div>
-                <p class="text-xs text-slate-300 font-sans" style="">
-                  We can deploy on Kubernetes, bare‑metal or your cloud, with observability using Prometheus, Grafana and
-                  OpenTelemetry. Access our reference architectures during consultation.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="w-full border-t border-slate-900/80 bg-slate-950" style="">
-      <div class="max-w-6xl mx-auto px-4 lg:px-8 py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-        <div class="flex items-center gap-2 text-xs text-slate-400" style="">
-          <span class="font-semibold tracking-tight text-slate-100 font-sans" style="">larynxai</span>
-          <span class="font-sans">·</span>
-          <span class="font-sans">Open‑source powered voice agents</span>
+    <!-- Floating Social Buttons -->
+    <div class="floating-socials">
+        <a href="https://www.instagram.com/raiyan.patel.92/" target="_blank" class="float-btn insta"
+            aria-label="Instagram">
+            <i class="ph ph-instagram-logo"></i>
+        </a>
+        <a href="https://wa.me/919870209779" target="_blank" class="float-btn whatsapp" aria-label="WhatsApp">
+            <i class="ph ph-whatsapp-logo"></i>
+        </a>
+    </div>
+
+    <!-- Enhanced Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo">Larynx<span class="highlight">AI</span></a>
+                <p>Automating the future of business communication with human-centric AI agents.</p>
+                <div class="footer-social-inline">
+                    <a href="https://www.linkedin.com/in/raiyan-amjad-patel-10967b378/" target="_blank"
+                        aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#founder">Founder</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#results">Success Stories</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="#real-estate">Real Estate AI</a></li>
+                    <li><a href="#services">Voice Agents</a></li>
+                    <li><a href="#services">WhatsApp Bots</a></li>
+                    <li><a href="#services">HR Automation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-list">
+                    <li><i class="ph ph-envelope-simple"></i> raiyan@larynxai.in</li>
+                    <li><i class="ph ph-phone"></i> +91 98765 43210</li>
+                    <li><i class="ph ph-map-pin"></i> Mumbai, India</li>
+                </ul>
+            </div>
+
+            <div class="footer-col partner-col">
+                <h4>Development Partner</h4>
+                <div class="partner-meta">
+                    <img src="alaxzr-logo.png" alt="AL'AXZR" class="partner-logo">
+                    <p class="partner-text">Crafted with precision by</p>
+                    <p class="founder-names">Abul Aiman Shaa & Rafan Khan</p>
+                    <span class="partner-label">Co-Founders of AL'AXZR</span>
+                </div>
+            </div>
         </div>
-        <div class="flex flex-wrap gap-3 text-[0.675rem] text-slate-400" style="">
-          <a href="#home" class="hover:text-slate-100 font-sans" style="">Home</a>
-          <a href="#services" class="hover:text-slate-100 font-sans" style="">Services</a>
-          <a href="#pricing" class="hover:text-slate-100 font-sans" style="">Consultation</a>
-          <a href="#contact" class="hover:text-slate-100 font-sans" style="">Contact</a>
+        <div class="footer-bottom">
+            <div class="container bottom-flex">
+                <p>&copy; 2026 Larynx AI. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
-  </div>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./realestatebot.js"></script>
+    <script src="script.js"></script>
+</body>
 
-    <script>
-function openNewTab() {
-  window.open("https://radmon-1jmfsh.sandbox.livekit.io/", "_blank");
-}
-</script>
-
-
-</body></html>
+</html>
